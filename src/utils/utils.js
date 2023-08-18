@@ -109,7 +109,7 @@ export async function getEtherScanAddr() {
       return 'https://testnet.sonar.cash/'
     case 2000:
     case '2000':
-      return 'https://explorer.dogmoney.money/'
+      return 'https://explorer.dogechain.dog/'
     case 568:
     case '568':
       return 'https://explorer-testnet.dogechain.dog/'

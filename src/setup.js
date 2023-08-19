@@ -94,7 +94,8 @@ export const getProvider = async reconnect => {
     provider = providerObject
     return provider
   } catch (e) {
-    if (e.message.match(/Unsupported network/)) {
+    console.trace(e)
+    if (e?.message.match(/Unsupported network/)) {
       globalErrorReactive({
         ...globalErrorReactive(),
         network: 'Unsupported Network'
